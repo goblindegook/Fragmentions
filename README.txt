@@ -15,7 +15,7 @@ Fragmentions were proposed by Kevin Marks in a 2014 [blog post](http://www.kevin
 
 In the following example, clicking "TL;DR" would jump to the `<strong>` element containing "Life, Liberty and the pursuit of Happiness":
 
-```
+`
 <article>
     <p>
         <a href="##pursuit">TL;DR</a>
@@ -37,7 +37,7 @@ In the following example, clicking "TL;DR" would jump to the `<strong>` element 
         Happiness</strong>.
     </p>
 </article>
-```
+`
 
 This plugin relies on [Jonathan Neal](http://www.jonathantneal.com/)'s [Fragmentions script](https://github.com/chapmanu/fragmentions).
 
@@ -64,6 +64,10 @@ This plugin relies on [Jonathan Neal](http://www.jonathantneal.com/)'s [Fragment
 2. Extract the `fragmentions` directory to your computer
 3. Upload the `fragmentions` directory to the `/wp-content/plugins/` directory
 4. Activate the plugin in the Plugin dashboard
+
+== Screenshots ==
+
+== Frequently Asked Questions ==
 
 == Changelog ==
 
