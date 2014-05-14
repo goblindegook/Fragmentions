@@ -79,8 +79,11 @@ This plugin relies on [Jonathan Neal](http://www.jonathantneal.com/)'s [Fragment
 
 == Upgrade Notice ==
 
+= 1.1.0 =
+* Latest version of the Fragmentions script.
+
 = 1.0 =
-Initial release.
+* Initial release.
 
 == Licenses ==
 
