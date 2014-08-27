@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Fragmentions
-Version: 1.1.0
+Version: 1.2.0
 Description: Fragmentions allow linking to document sections on WordPress sites using words or phrases.
 Author: Luís Rodrigues
 Author URI: http://goblindegook.net/
