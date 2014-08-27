@@ -18,7 +18,7 @@ if (!class_exists( 'FragmentionsPlugin' )):
 
 class FragmentionsPlugin {
 
-    const VERSION     = '1.1.0';
+    const VERSION     = '1.2.0';
 
     const PLUGIN_SLUG = 'fragmentions';
 
@@ -33,8 +33,8 @@ class FragmentionsPlugin {
     }
 
     public function enqueue_scripts() {
-        wp_enqueue_style( self::PLUGIN_SLUG . '-styles', plugins_url( 'assets/fragmentions.css', __FILE__ ), array(), self::VERSION );
-        wp_enqueue_script( self::PLUGIN_SLUG . '-script', plugins_url( 'assets/fragmention.js', __FILE__ ), array(), self::VERSION );
+        wp_enqueue_style( self::PLUGIN_SLUG . '-styles', plugins_url( 'styles/fragmentions.css', __FILE__ ), array(), self::VERSION );
+        wp_enqueue_script( self::PLUGIN_SLUG . '-script', plugins_url( 'scripts/fragmention.js', __FILE__ ), array(), self::VERSION );
     }
 }
 

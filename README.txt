@@ -2,8 +2,8 @@
 Contributors: goblindegook
 Tags: annotations
 Requires at least: 3.9
-Tested up to: 3.9
-Stable tag: 1.1.0
+Tested up to: 4.0
+Stable tag: 1.2.0
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,25 +17,25 @@ In the following example, clicking "TL;DR" would jump to the `<strong>` element 
 
 `
 <article>
-    <p>
-        <a href="##pursuit">TL;DR</a>
-    </p>
+	<p>
+		<a href="##pursuit">TL;DR</a>
+	</p>
 
-    <p>
-        When in the Course of human events, it becomes necessary for one people 
-        to dissolve the political bands which have connected them with another, 
-        and to assume among the powers of the earth, the separate and equal 
-        station to which the Laws of Nature and of Nature’s God entitle them, a 
-        decent respect to the opinions of mankind requires that they should 
-        declare the causes which impel them to the separation.
-    </p>
+	<p>
+		When in the Course of human events, it becomes necessary for one people
+		to dissolve the political bands which have connected them with another,
+		and to assume among the powers of the earth, the separate and equal
+		station to which the Laws of Nature and of Nature’s God entitle them, a
+		decent respect to the opinions of mankind requires that they should
+		declare the causes which impel them to the separation.
+	</p>
 
-    <p>
-        We hold these truths to be self-evident, that all men are created 
-        equal, that they are endowed by their Creator with certain unalienable 
-        Rights, that among these are <strong>Life, Liberty and the pursuit of 
-        Happiness</strong>.
-    </p>
+	<p>
+		We hold these truths to be self-evident, that all men are created
+		equal, that they are endowed by their Creator with certain unalienable
+		Rights, that among these are <strong>Life, Liberty and the pursuit of
+		Happiness</strong>.
+	</p>
 </article>
 `
 
