@@ -71,6 +71,10 @@ This plugin relies on [Jonathan Neal](http://www.jonathantneal.com/)'s [Fragment
 
 == Changelog ==
 
+= 1.2.0 =
+* Updated Fragmentions script.
+* Support for WordPress 4.0.
+
 = 1.1.0 =
 * Latest version of the Fragmentions script.
 
@@ -78,6 +82,9 @@ This plugin relies on [Jonathan Neal](http://www.jonathantneal.com/)'s [Fragment
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.2.0 =
+* Support for WordPress 4.0.
 
 = 1.1.0 =
 * Latest version of the Fragmentions script.
