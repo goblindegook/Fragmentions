@@ -1,0 +1,18 @@
+{
+    "name": "goblindegook/fragmentions",
+    "type": "wordpress-plugin",
+    "description": "Fragmentions allow linking to document sections on WordPress sites using words or phrases.",
+    "license": "GPL 2.0+",
+    "authors": [
+        {
+            "name": "Jonathan Neal"
+        },
+        {
+            "name": "Luis Rodrigues",
+            "email": "hello@goblindegook.net"
+        }
+    ],
+    "autoload": {},
+    "require": {},
+    "require-dev": {}
+}

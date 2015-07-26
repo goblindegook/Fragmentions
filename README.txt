@@ -3,7 +3,7 @@ Contributors: goblindegook
 Tags: annotations
 Requires at least: 3.9
 Tested up to: 4.3
-Stable tag: 1.2.0
+Stable tag: 1.3.0
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -70,6 +70,10 @@ This plugin relies on [Jonathan Neal](http://www.jonathantneal.com/)'s [Fragment
 == Frequently Asked Questions ==
 
 == Changelog ==
+
+= 1.3.0 =
+* Updated Fragmentions script.
+* Included unminified script in the plugin package.
 
 = 1.2.0 =
 * Updated Fragmentions script.
