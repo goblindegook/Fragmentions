@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Fragmentions
-Version: 1.3.0
+Version: 1.4.0
 Description: Fragmentions allow linking to document sections on WordPress sites using words or phrases.
 Author: Luís Rodrigues
 Author URI: http://goblindegook.net/
@@ -10,34 +10,49 @@ Text Domain: fragmentions
 Domain Path: /languages
 */
 
-if (!defined( 'WPINC' )) {
+if ( ! defined( 'WPINC' ) ) {
     die;
 }
 
-if (!class_exists( 'FragmentionsPlugin' )):
+if ( class_exists( 'Fragmentions_Plugin' ) ) {
+	return;
+}
 
-class FragmentionsPlugin {
+class Fragmentions_Plugin {
 
-    const VERSION     = '1.3.0';
+	/**
+	 * Plugin slug.
+	 */
+    const SLUG = 'fragmentions';
 
-    const PLUGIN_SLUG = 'fragmentions';
+    /**
+     * Plugin version.
+     */
+    const VERSION = '1.4.0';
 
-    function __construct () {
-        add_action( 'init', array( $this, 'init' ) );
-    }
-
-    public function init () {
-        load_plugin_textdomain( 'fragmentions', FALSE, basename( plugin_dir_path( dirname( __FILE__ ) ) ) . '/languages/' );
-
+    /**
+     * Bootstrap the plugin.
+     * @return [type] [description]
+     */
+    public static function plugins_loaded() {
+        load_plugin_textdomain( self::SLUG, false, basename( plugin_dir_path( dirname( __FILE__ ) ) ) . '/languages/' );
         add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
     }
 
-    public function enqueue_scripts() {
-        wp_enqueue_style( self::PLUGIN_SLUG . '-styles', plugins_url( 'styles/fragmentions.css', __FILE__ ), array(), self::VERSION );
-        wp_enqueue_script( self::PLUGIN_SLUG . '-script', plugins_url( 'scripts/fragmention.min.js', __FILE__ ), array(), self::VERSION );
+    /**
+     * Enqueue scripts and styles.
+     */
+    public static function enqueue_scripts() {
+        $script = 'scripts/fragmention.min.js';
+        $styles = 'styles/fragmentions.css';
+
+        if ( defined( 'WP_DEBUG' ) && WP_DEBUG ) {
+        	$script = 'scripts/fragmention.js';
+        }
+
+        wp_enqueue_style( self::SLUG . '-styles', plugins_url( $styles, __FILE__ ), null, self::VERSION );
+        wp_enqueue_script( self::SLUG . '-script', plugins_url( $script, __FILE__ ), null, self::VERSION );
     }
 }
 
-endif;
-
-new FragmentionsPlugin;
+add_action( 'plugins_loaded', array( 'Fragmentions_Plugin', 'plugins_loaded' ) );
