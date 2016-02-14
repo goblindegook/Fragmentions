@@ -1,6 +1,6 @@
 === Fragmentions ===
 Contributors: goblindegook
-Tags: annotations
+Tags: annotations, fragmentions
 Requires at least: 3.9
 Tested up to: 4.4.2
 Stable tag: 1.4.0

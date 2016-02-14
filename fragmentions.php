@@ -4,7 +4,7 @@ Plugin Name: Fragmentions
 Version: 1.4.0
 Description: Fragmentions allow linking to document sections on WordPress sites using words or phrases.
 Author: Luís Rodrigues
-Author URI: http://goblindegook.net/
+Author URI: https://goblindegook.com/
 Plugin URI: https://github.com/goblindegook/fragmentions/
 Text Domain: fragmentions
 Domain Path: /languages
@@ -36,7 +36,7 @@ class Fragmentions_Plugin {
      */
     public static function plugins_loaded() {
         load_plugin_textdomain( self::SLUG, false, basename( plugin_dir_path( dirname( __FILE__ ) ) ) . '/languages/' );
-        add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
+        add_action( 'wp_enqueue_scripts', array( __CLASS__, 'enqueue_scripts' ) );
     }
 
     /**
