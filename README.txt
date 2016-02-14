@@ -74,7 +74,8 @@ This plugin relies on [Jonathan Neal](http://www.jonathantneal.com/)'s [Fragment
 = 1.4.0 =
 * Updated Fragmentions script.
 * I18n registration fixes.
-* Unminified script is enqueued in debug mode.
+* Load script in the document footer.
+* Enqueue unminified script while in debug mode.
 
 = 1.3.0 =
 * Updated Fragmentions script.
