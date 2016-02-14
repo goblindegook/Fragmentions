@@ -3,10 +3,10 @@
   "title": "Fragmentions",
   "description": "Fragmentions allow linking to document sections on WordPress sites using words or phrases.",
   "version": "1.4.0",
-  "homepage": "https://wordpress.org/plugins/wp-cas-server/",
+  "homepage": "https://wordpress.org/plugins/fragmentions/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/goblindegook/wp-cas-server"
+    "url": "https://github.com/goblindegook/fragmentions"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
@@ -23,13 +23,8 @@
     "load-grunt-tasks": "^3.2.0"
   },
   "keywords": [
-    "authentication",
-    "cas",
-    "central authentication service",
-    "jasig cas",
+    "annotations",
     "plugin",
-    "single sign-on",
-    "sso",
     "wordpress",
     "wp-plugin"
   ]
