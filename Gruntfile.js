@@ -22,6 +22,7 @@ module.exports = function (grunt) {
     '!README.md',
     '!svn/**',
     '!tests/**',
+    '!vendor/**',
   ];
 
   // Project configuration
@@ -175,13 +176,9 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('build', [
-    'composer:install:no-dev',
-    'composer:dump-autoload:optimize:no-dev',
     'clean',
     'copy',
     'compress',
-    'composer:install',
-    'composer:dump-autoload:optimize',
   ]);
 
   grunt.registerTask('deploy', [
